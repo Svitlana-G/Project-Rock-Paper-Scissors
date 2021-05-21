@@ -38,11 +38,54 @@ function scoreRock() {
 
 
 function scoreScissors() {
-    console.log("Scissors")
+    console.log("User: Scissors")
+
+    let compZuf = computer()
+    console.log('Computer:' + compZuf)
+
+    if (compZuf == 1) {
+        console.log('Unentschieden')
+        result.innerHTML = 'You both chose Scissors'
+    }
+    else if (compZuf == 2) {
+        console.log("Gewinn")
+        result.innerHTML = 'Scissors(user) Paper(comp). You win!'
+        userRes++
+        console.log('user:' + userRes)
+        user.innerHTML = userRes
+    }
+    else {
+        console.log("Niederlage")
+        result.innerHTML = 'Scissors(user) Rock(comp). You lose!'
+        compRes++
+        console.log('comp:' + compRes)
+        comp.innerHTML = compRes
+    }
 }
 
 function scorePaper() {
-    console.log("Paper")
+    console.log("User: Paper")
+    let compZuf = computer()
+    console.log('Computer:' + compZuf)
+
+    if (compZuf == 2) {
+        console.log('Unentschieden')
+        result.innerHTML = 'You both chose Paper'
+    }
+    else if (compZuf == 0) {
+        console.log("Gewinn")
+        result.innerHTML = 'Paper(user) Rock(comp). You win!'
+        userRes++
+        console.log('user:' + userRes)
+        user.innerHTML = userRes
+    }
+    else {
+        console.log("Niederlage")
+        result.innerHTML = 'Paper(user) Scissors(comp). You lose!'
+        compRes++
+        console.log('comp:' + compRes)
+        comp.innerHTML = compRes
+    }
 }
 
 function computer() {
@@ -50,6 +93,11 @@ function computer() {
     //0 - Rock
     //1 - Scissors
     //2 - Paper
-
 }
 
+function restart() {
+    let userRes = 0;
+    let compRes = 0;
+    comp.innerHTML = compRes;
+    user.innerHTML = userRes
+}
