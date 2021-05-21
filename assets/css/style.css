@@ -1,0 +1,106 @@
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    background-color: darkslategray;   
+    color:white; 
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5vh;
+}
+
+h1{
+    font-weight: 400;
+}
+/* Styling für rounds */
+.round {
+    border: 2px solid white;
+    margin-top: 5vh;
+    padding: 0 10% 2vh;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+form label:first-of-type{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-right: 10%;
+}
+
+form label:nth-of-type(2){
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+form label:nth-of-type(3){
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+form label:last-of-type{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+/* Styling für score */
+.score {
+    border: 2px solid white;
+    margin-top: 3vh;
+    padding: 0 20%;
+    font-size: 1.5em;
+    display: flex;
+ }
+
+ section{
+     display: flex;
+     width: 70%;
+     justify-content:inherit;
+ }
+
+.player{
+     padding-top: 5vh;    
+ }
+ 
+ .player p{
+     background-color: tomato;
+ }
+ 
+h2{
+    font-weight: 400;
+    margin: 4vh 0;
+}
+/* Styling für images (Stein, Schere, Papier) */
+ div{
+     text-align: center;
+ }
+
+div img:nth-of-type(3){
+    width: 20%;
+}
+div img{
+     border-radius:50%;
+     border: 2px solid white;
+     padding: 3px;
+     margin-right: 10px;
+ } 
+/* Button styling */
+ a{
+     text-decoration: none;
+     background-color:white;
+     color:darkslategray;
+     font-weight: 600;
+     border: 2px solid white;
+     padding: 1vh 4%;
+ }

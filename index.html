@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Projekt_Rock-paper-scissors</title>
+</head>
+
+<body>
+
+
+    <h1>Rock Paper Scissors</h1>
+    <main>
+        <div class="round">
+            <p>How many rounds?</p>
+            <form action="">
+                <label for="check5">
+                    <input type="radio" name="rounds" id="check5" checked> 5
+                </label>
+                <label for="check10">
+                    <input type="radio" name="rounds" id="check10"> 10
+                </label>
+                <label for="check5">
+                    <input type="radio" name="rounds" id="check15"> 15
+                </label>
+                <label for="check10">
+                    <input type="radio" name="rounds" id="check20"> 20
+                </label>
+            </form>
+
+        </div>
+        <section>
+            <div class="player">
+                <p>USER</p>
+            </div>
+            <div class="score">
+                <p><span id="user">0</span> : <span id="comp">0</span></p>
+            </div>
+            <div class="player">
+                <p>COMP</p>
+            </div>
+        </section>
+        <h2 id="result">Let's play</h2>
+        <div>
+            <img src="assets/img/icons8-hand_-felsen-50.png" alt="" onclick="scoreRock()">
+            <img src="assets/img/icons8-hand_-schere-50.png" alt="" onclick="scoreScissors()">
+            <img src="assets/img/icons8-ganze-hand-80.png" alt="" onclick="scorePaper()">
+            <!-- <input type=" image" src="assets/img/icons8-hand_-felsen-50.png" alt="" onclick="scoreRock()">
+            <input type="image" src="assets/img/icons8-hand_-schere-50.png" alt="" onclick="scoreScissors()">
+            <input type="image" src="assets/img/icons8-ganze-hand-80.png" alt="" onclick="scorePaper()"> -->
+        </div>
+        <h4>MAKE YOUR MOVE.</h4>
+        <a href="" onclick="restart()">NEW GAME</a>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
