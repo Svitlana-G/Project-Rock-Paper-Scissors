@@ -22,10 +22,19 @@ h1{
     font-weight: 400;
 }
 /* Styling für rounds */
-.round {
+#round{
     border: 2px solid white;
     margin-top: 5vh;
     padding: 0 10% 2vh;
+}
+#roundCurrent {
+    border: 2px solid white;
+    margin-top: 5vh;
+    padding: 0 14%;
+    font-size: 1.5em;    
+}
+.hide {
+    display: none;
 }
 
 form{
@@ -54,6 +63,7 @@ form label:last-of-type{
     grid-column: 2/3;
     grid-row: 2/3;
 }
+
 /* Styling für score */
 .score {
     border: 2px solid white;
@@ -76,10 +86,13 @@ form label:last-of-type{
  .player p{
      background-color: tomato;
  }
- 
+
 h2{
     font-weight: 400;
     margin: 4vh 0;
+}
+sup{
+    font-size: .7em;
 }
 /* Styling für images (Stein, Schere, Papier) */
  div{
@@ -95,7 +108,12 @@ div img{
      padding: 3px;
      margin-right: 10px;
  } 
-/* Button styling */
+
+ div img:active{
+     background-color: green;
+} 
+
+ /* Button styling */
  a{
      text-decoration: none;
      background-color:white;
